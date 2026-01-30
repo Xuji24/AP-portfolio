@@ -45,8 +45,8 @@ export default function HeroSection() {
         </h1>
 
         {/* Subtitle */}
-        <h2 className="text-3xl lg:text-4xl font-bold mb-8 text-gray-700 dark:text-gray-300">
-          Full-Stack Web Developer & Problem Solver
+        <h2 className="text-2xl lg:text-3xl font-bold mb-8 text-gray-700 dark:text-gray-300">
+          Full-Stack Web Developer | Aspiring Software Engineer | Tech Enthusiast
         </h2>
 
         {/* Description with Better Spacing */}

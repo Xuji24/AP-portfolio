@@ -8,7 +8,7 @@ const experience = [
     role: "Backend Developer",
     company: "Polytechnic University of the Philippines",
     date: "June 2024",
-    description: "Using C#, backend design in winforms, utilizing mysql4.",
+    description: "Using C#, backend design in winforms, and utilizing mysql4.",
   },
   {
     id: 2,

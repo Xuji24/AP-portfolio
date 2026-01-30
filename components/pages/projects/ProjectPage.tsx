@@ -12,17 +12,18 @@ const projects = [
   },
   {
     id: 2,
-    title: "NextJS Project - Event Running App",
+    title: "JS Project - Coffee Shop Static Website",
     description:
-      "A progressive event running app focused on user-centric design and hassle-free reservations, supported by a robust backend with Supabase, PostgreSQL, NextJS and secure Google OAuth authentication.",
-    link: "#",
-    status: "In Progress",
+      "A coffee shop app, that let users explore various coffee blends, view detailed descriptions, and place orders online through a user-friendly interface.",
+    link: "https://julsmartinez.github.io/STOUTCAFE/",
+    status: "Completed",
+    image: "/stoutcafe.png",
   },
   {
     id: 3,
-    title: "Coming Soon - New Project",
+    title: "NextJS Project - Event Running App",
     description:
-      "New project coming soon. Stay tuned for updates on this exciting venture!",
+      "A progressive event running app focused on user-centric design and hassle-free reservations, supported by a robust backend with Supabase, PostgreSQL, NextJS and secure Google OAuth authentication.",
     link: "#",
     status: "In Progress",
   },

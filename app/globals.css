@@ -1,6 +1,7 @@
 @import "tailwindcss";
 
-:root {
+:root,
+html.light {
   --background: #ffffff;
   --foreground: #171717;
   color-scheme: light;
@@ -24,11 +25,8 @@ html {
 }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
   position: relative;
-  transition: background-color 0.3s ease, color 0.3s ease;
   overflow-x: hidden;
 }
 

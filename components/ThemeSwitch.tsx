@@ -1,38 +1,32 @@
-'use client'
+"use client";
 
-import { FiSun, FiMoon } from "react-icons/fi"
-import { useState, useEffect } from 'react'
-import { useTheme } from 'next-themes'
-import Image from "next/image"
+import { FiSun, FiMoon } from "react-icons/fi";
+import { useTheme } from "next-themes";
 
 export default function ThemeSwitch() {
-  const [mounted, setMounted] = useState(false)
-  const { setTheme, resolvedTheme } = useTheme()
+  const { theme, setTheme } = useTheme();
 
-  useEffect(() => {
-    function markMounted(){
-        setMounted(true);
-    }
-    markMounted();
-  }, [])
-  if (!mounted) return (
-    <Image
-      src="data:image/svg+xml;base64,PHN2ZyBzdHJva2U9IiNGRkZGRkYiIGZpbGw9IiNGRkZGRkYiIHN0cm9rZS13aWR0aD0iMCIgdmlld0JveD0iMCAwIDI0IDI0IiBoZWlnaHQ9IjIwMHB4IiB3aWR0aD0iMjAwcHgiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PHJlY3Qgd2lkdGg9IjIwIiBoZWlnaHQ9IjIwIiB4PSIyIiB5PSIyIiBmaWxsPSJub25lIiBzdHJva2Utd2lkdGg9IjIiIHJ4PSIyIj48L3JlY3Q+PC9zdmc+Cg=="
-      width={36}
-      height={36}
-      sizes="36x36"
-      alt="Loading Light/Dark Toggle"
-      priority={false}
-      title="Loading Light/Dark Toggle"
-    />
-  )
+  const handleToggle = () => {
+    const newTheme = theme === "dark" ? "light" : "dark";
+    setTheme(newTheme);
+  };
 
-  if (resolvedTheme === 'dark') {
-    return <FiSun onClick={() => setTheme('light')} />
-  }
+  if (!theme)
+    return (
+      <div className="w-6 h-6 rounded-full bg-gray-300 dark:bg-gray-700 animate-pulse" />
+    );
 
-  if (resolvedTheme === 'light') {
-    return <FiMoon onClick={() => setTheme('dark')} />
-  }
-
+  return (
+    <button
+      onClick={handleToggle}
+      className="p-2 rounded-lg hover:bg-gray-200 dark:hover:bg-gray-800 transition-colors"
+      aria-label="Toggle theme"
+    >
+      {theme === "dark" ? (
+        <FiSun className="text-yellow-500 w-5 h-5" />
+      ) : (
+        <FiMoon className="text-gray-700 w-5 h-5" />
+      )}
+    </button>
+  );
 }

@@ -5,7 +5,7 @@ import ContactPage from "@/components/pages/contact/ContactPage";
 
 export default function Home() {
   return (
-    <main className="w-full bg-white dark:bg-black transition-colors duration-300">
+    <main className="w-full bg-white dark:bg-black text-black dark:text-white transition-colors duration-300">
       {/* Hero Section */}
       <section
         id="home"
