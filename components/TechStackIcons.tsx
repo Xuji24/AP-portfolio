@@ -10,5 +10,6 @@ export const TechStackData = [
   { name: "Express", image: "/expressjs-light.png" },
   { name: "jQuery", image: "/Jquery.png" },
   { name: "GitHub", image: "/github.png" },
+  { name: "Git", image: "/Vector.png"},
   { name: "PostgreSQL", image: "/PostgreSQL.png" },
 ];
