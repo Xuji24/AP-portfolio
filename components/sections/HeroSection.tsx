@@ -81,34 +81,6 @@ export default function HeroSection() {
             View My Work
           </a>
         </div>
-
-        {/* Stats Row */}
-        <div className="mt-12 flex flex-wrap gap-8">
-          <div className="flex flex-col">
-            <span className="text-3xl font-bold text-teal-600 dark:text-teal-400">
-              2+
-            </span>
-            <span className="text-sm text-gray-600 dark:text-gray-400">
-              Projects Completed
-            </span>
-          </div>
-          <div className="flex flex-col">
-            <span className="text-3xl font-bold text-teal-600 dark:text-teal-400">
-              0
-            </span>
-            <span className="text-sm text-gray-600 dark:text-gray-400">
-              Years Experience
-            </span>
-          </div>
-          <div className="flex flex-col">
-            <span className="text-3xl font-bold text-teal-600 dark:text-teal-400">
-              100%
-            </span>
-            <span className="text-sm text-gray-600 dark:text-gray-400">
-              Dedicated
-            </span>
-          </div>
-        </div>
       </div>
     </section>
   );
